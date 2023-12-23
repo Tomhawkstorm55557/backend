@@ -1,7 +1,5 @@
 const router = require("express").Router();
-const { Router } = require("express");
 const Category = require("../models/Category");
-const { route } = require("./auth");
 
 router.post("/", async (req, res) => {
   const newCat = new Category(req.body);
@@ -22,4 +20,4 @@ router.get("/", async (req, res) => {
     }
   });
 
-module.exports=router;
+module.exports = router;

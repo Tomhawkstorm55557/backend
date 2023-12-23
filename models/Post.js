@@ -23,8 +23,11 @@ const PostSchema = new mongoose.Schema(
       type: Array,
       required: false,
     },
+    imgurl: {
+      type: String,
+      default: "default_image_url_here", // Provide a default value
+    }
   },
   { timestamps: true }
 );
-
 module.exports = mongoose.model("Post", PostSchema);
