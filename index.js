@@ -14,7 +14,7 @@ app.use(express.json());
 const fs = require("fs").promises; 
 const { exec } = require("child_process");
 const voice = require("elevenlabs-node");
-const  commentRoutes = require("../api/routes/CommentRoutes");
+const commentRoutes = require("../api/routes/commentRoutes");
 
 
 
