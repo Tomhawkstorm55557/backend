@@ -1,4 +1,4 @@
- const Comment = require("../models/ommentModel.js");
+ const Comment = require("../models/CommentModel.js");
 
 const getComments = async (req, res) => {
     const id = req.params.postId
