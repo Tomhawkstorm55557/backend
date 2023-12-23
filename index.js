@@ -14,7 +14,7 @@ app.use(express.json());
 const fs = require("fs").promises; 
 const { exec } = require("child_process");
 const voice = require("elevenlabs-node");
-
+const  commentRoutes = require('../api/routes/commentRoutes');
 
 
 
@@ -39,7 +39,7 @@ app.get("/", (req, res) => {
 
 
 
-const  commentRoutes = require('../api/routes/commentRoutes');
+
 app.use(cors());
 
 
